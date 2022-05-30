@@ -1,0 +1,65 @@
+﻿@model feria.Models.Puesto
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Puesto
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdPuesto)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Disponibilidad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Disponibilidad)
+        </dd>
+        <dt class="col-sm-2">
+            Administrador
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdAgricultorNavigation.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            Producto 1
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdProducto1Navigation.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+           Producto 2
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdProducto2Navigation.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+       Producto 3
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdProducto3Navigation.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+           Producto 4
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdProducto4Navigation.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+         Producto 5
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdProducto5Navigation.Nombre)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdPuesto">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

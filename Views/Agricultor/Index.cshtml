@@ -1,0 +1,48 @@
+﻿@model IEnumerable<feria.Models.Agricultor>
+
+@{
+    ViewData["Title"] = "Agricultor";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                Primer Apellido
+            </th>
+            <th>
+                Segundo Apellido
+            </th>
+            <th style="text-align:center"><button type="button" class="btn btn-info"><a asp-action="Create" style="color:white">Agregar</a></button></th>
+        </tr>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apel1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apel2)
+            </td>
+            <td style="text-align:center">
+                <button type="button" class="btn btn-info"><a asp-action="Edit" asp-route-id="@item.IdAgricultor" style="color:white">Editar</a></button>
+
+                <button type="button" class="btn btn-info"><a asp-action="Details" asp-route-id="@item.IdAgricultor" style="color:white">Ver</a></button>
+
+                <button type="button" class="btn btn-info"><a asp-action="Delete" asp-route-id="@item.IdAgricultor" style="color:white">Eliminar</a></button>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

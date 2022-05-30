@@ -1,0 +1,39 @@
+﻿@model feria.Models.Agricultor
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Deseas eliminar este usuario?</h3>
+<div>
+    <h4>Agricultor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+          Primer Apellido
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apel1)
+        </dd>
+        <dt class = "col-sm-2">
+          Segundo Apellido
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apel2)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdAgricultor" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

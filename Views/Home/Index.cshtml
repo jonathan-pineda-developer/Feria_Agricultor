@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <h2>FERIA DEL AGRICULTOR</h2>
+        <h4>Sistema de gestion administrativa de la feria</h4>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Ubicacion" target="_blank">
+                    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-farming-farm-flaticons-lineal-color-flat-icons-7.png" /></a>
+                    <h4>Ubicación </h4>
+                    <p>Gestion de los registros de los agricultores en la feria </p>
+</div>
+            <div class="col-sm-4">
+                <!--<span class="glyphicon glyphicon-folder-open"></span>-->
+                <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-shopping-cart-black-friday-flaticons-lineal-color-flat-icons.png" />
+                <h4>Compras</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <!-- <span class="glyphicon glyphicon-grain"></span>-->
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Integrantes">
+                    <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-internet-work-from-home-tulpahn-outline-color-tulpahn.png" /></a>
+                    <h4>Contactos</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CategoryXproduct"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-vegetables-vegan-and-vegetarian-flaticons-lineal-color-flat-icons-3.png" /></a>
+                <h4>Productos</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Puesto" asp-action="Index">
+                    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-market-street-food-flaticons-lineal-color-flat-icons.png" /></a>
+                    <h4>Puestos</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Agricultor" asp-action="Index"> <img src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/000000/external-farmer-male-occupation-avatar-itim2101-lineal-color-itim2101-2.png" /></a>
+                <h4>Agricultor</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+</body>
+<br>
+</html>
